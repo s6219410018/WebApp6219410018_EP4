@@ -13,15 +13,72 @@
 </head>
 <body>
       <h1>- - Form Tage - -</h1>
-      <h2>ลงทะเบียนพนักงาน</h2>>
+      <h2>ลงทะเบียนพนักงาน</h2>
 <form action="#" method="GET">
       ชื่อ <input type="text" name="emp_name" id="" >
       <br></br>
       ปีเกิด <input type="number" name="emp_byear" id="">
       <br></br>
       รหัสผ่าน <input type="password" name="emp_pwd" id="">
-
-
+      <br></br>
+      วัน เดือน ปีเกิด <input type="date" name="emp_bday" id="">
+      <br></br>
+      วัน เวลา ทำงาน <input type="datetime-local" name="emp_dwork" id="">
+      <br></br>
+      เวลาเกิด <input type="time" name="emp_btime" id="">
+      <br></br>
+      เพศ 
+      <!-- radio ต้องเลือกและเลือกได้แค่ 1-->>
+      <input type="radio" name="emp_sex" id="" value="m">หญิง
+      <input type="radio" name="emp_sex" id="" value="f">ชาย
+      <input type="radio" name="emp_sex" id="" checked="o">เพศทางเลือก
+      <br></br>
+      การศึกษาสูงสุด
+      <!--select/option ใช้เลือก 1. เลือกได้แค่ 1 2.เลือกได้มากกว่า 1-->
+      <select name="emp_education" id="">
+            <option value="ตรี">ปริญญาตรี</option>
+            <option value="โท">ปริญญาโท</option>
+            <option value="เอก">ปริญญาเอก</option>
+      </select>
+      <br></br>
+      คำนำหน้า
+      <!--select/option ใช้้เลือกได้แค่ 1 -->
+      <select name="epm_title" id="" size="1">
+            <option value="1">ด.ช</option>
+            <option value="2">ด.ญ</option>
+            <option value="3">นาย</option>
+            <option value="4">นาง</option>
+            <option value="5">นางสาว</option>
+      </select>
+      <br></br>
+      เครืองดื่มที่ชอบ
+      <!--select/option ใช้เลือกได้มากกว่า 1 -->
+      <select name="epm_drink" id="" size="1" mutiple>
+            <option value="น้ำเปล่า">น้ำเปล่า</option>
+            <option value="กาแฟ">กาแฟ</option>
+            <option value="อเมริกาโน่">อเมริกาโน่</option>
+            <option value="คาปูชิโน่">คาปูชิโน่</option>
+            <option value="ลาเต้">ลาเต้</option>
+            <option value="โค๊ก">โค๊ก</option>
+      </select>
+      <br></br>
+      เครื่องดื่มที่ชอบ 2
+      <input type="checkbox" name="emp_drink1" id="" value="น้ำเปล่า">น้ำเปล่า
+      <input type="checkbox" name="emp_drink2" id="" value="กาแฟ">กาแฟ
+      <input type="checkbox" name="emp_drink3" id="" value="อเมริกาโน่" checked>อเมริกาโน่
+      <input type="checkbox" name="emp_drink4" id="" value="คาปูชิโน่"checked>คาปูชิโน่
+      <input type="checkbox" name="emp_drink5" id="" value="ลาเต้">ลาเต้
+      <input type="checkbox" name="emp_drink6" id="" value="โค๊ก">โค๊ก
+      <br></br>
+      เลือกไฟล์งาน
+      <input type="file" name="emp_file" id="" accept="image/*">
+      <br></br>
+      หมายเหตุ 
+      <textarea name="emp_note" id="" cols="20" rows="10"></textarea>
+      <br></br>
+      <input type="submit" value="ตกลง">
+      <input type="reset" value="ยกเลิก">
+      <button>บันทึก save</button>
 
 </form>
 
